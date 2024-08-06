@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         video.addEventListener('touchend', () => {
             video.pause();
             video.classList.remove('playing');
-        });
+        }); 
 
         video.addEventListener('click', () => {
             theVideo.src = video.currentSrc;
