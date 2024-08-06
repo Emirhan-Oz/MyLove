@@ -1,5 +1,4 @@
 const imgs = document.querySelectorAll('.photo');
-const videos = document.querySelectorAll('.videos');
 const fullPage = document.querySelector('#fullpage');
 const fullpage_img = document.querySelector('#fullpage_img');
 const theVideo = document.querySelector('#theVideo');
