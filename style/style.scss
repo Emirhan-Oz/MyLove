@@ -232,7 +232,7 @@ body.dark {
 
     min-height: 100vh;
     gap: 50px;
-    padding: 50px;
+    padding: 50px 10px;
 
     p {
         font-family: 'NewYork';
@@ -401,6 +401,13 @@ body.dark {
         }
     }
 }
+@media only screen and (max-width:670px) {
+    .container {
+        p {
+            font-size: 30px !important;
+        }
+    }
+}
 @media only screen and (max-width:426px) {
     #fullpage_img {
         width: 95% !important;
@@ -415,7 +422,7 @@ body.dark {
 
     .container {
         p {
-            font-size: 30px !important;
+            font-size: 25px !important;
         }
     }
 }
