@@ -168,9 +168,13 @@ body.dark {
        break-inside: avoid;
   filter: grayscale(100%);
   transition: 0.3s;
+  box-shadow: -5px 8px 6px 1px rgba(0, 0, 0, 0.55);
 }
 #gallery-page .gallery-container .image-gallery > li:hover {
   filter: grayscale(0%);
+}
+#gallery-page .gallery-container .image-gallery > li .reverse {
+  transform: rotate(180deg);
 }
 #gallery-page .gallery-container .image-gallery li img {
   -o-object-fit: cover;
@@ -178,7 +182,6 @@ body.dark {
   vertical-align: middle;
   width: 100%;
   height: 100%;
-  box-shadow: -5px 8px 6px 1px rgba(0, 0, 0, 0.55);
 }
 #gallery-page .gallery-container video::-webkit-media-controls {
   display: none !important;
@@ -195,7 +198,6 @@ body.dark {
   vertical-align: middle;
   width: 100%;
   height: 100%;
-  box-shadow: -5px 8px 6px 1px rgba(0, 0, 0, 0.55);
 }
 
 #socialmedias-page {
