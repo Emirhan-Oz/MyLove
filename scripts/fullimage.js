@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             video.classList.remove('playing');
         });
 
-        video.addEventListener('click', function () {
+        video.addEventListener('click', () => {
             theVideo.src = video.currentSrc;
             fullPage.style.display = 'block';
             theVideo.style.display = "block";
