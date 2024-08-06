@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILGE ♥ EMIRHAN</title>
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="home-page">
+        <p id="title">BILGE ♥ EMIRHAN</p>
+        <div class="music-container" onclick="aud_play_pause()">
+            <div class="music-bar">
+                <span class="material-symbols-outlined music-button">volume_up</span>
+                <p>Milky Chance - Stolen Dance</p>
+                <audio id="myAudio">
+                    <source src="music/song.mp3" type='audio/mp3'>
+                </audio>
+                <script>
+                    function aud_play_pause() {
+                        var myAudio = document.getElementById("myAudio");
+                        if (myAudio.paused) {
+                            myAudio.play();
+                        } else {
+                            myAudio.pause();
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="down-button-container">
+            <a href="#gallery-page">
+                <div class="profile-down-button">
+                    <div class="down-button-l"></div>
+                    <div class="down-button-r"></div>
+                </div>
+            </a>
+        </div>
+        <div class="heart-container">
+            <span class="material-symbols-outlined light-mode">favorite</span>
+        </div>
+    </section>
+    <section id="gallery-page">
+        <div class="gallery-container">
+            <ul class="image-gallery">
+                <li>
+                    <video class="videos" id="myvideo" autoplay muted loop>
+                        <source src="images/video1.mp4" type="video/mp4" loading="lazy">
+                    </video>
+                </li>
+                <li><img src="images/1.jpeg" class="photo" loading="lazy" /></li>
+                <li><img src="images/2.jpeg" class="photo" loading="lazy" /></li>
+                <li><img src="images/5.jpeg" class="photo" loading="lazy" /></li>
+                <li>
+                    <video class="videos" id="myvideo" autoplay muted loop>
+                        <source src="images/video2.mp4" type="video/mp4" loading="lazy">
+                    </video>
+                </li>
+                <li><img src="images/3.jpeg" class="photo" loading="lazy" /></li>
+                <li><img src="images/4.jpeg" class="photo" loading="lazy" /></li>
+                <li>
+                    <video class="videos" id="myvideo" autoplay muted loop>
+                        <source src="images/video5.mp4" type="video/mp4" loading="lazy">
+                    </video>
+                </li>
+                <li><img src="images/6.jpeg" class="photo" loading="lazy" /></li>
+                <li>
+                    <video class="videos" id="myvideo" autoplay muted loop>
+                        <source src="images/video3.mp4" type="video/mp4" loading="lazy">
+                    </video>
+                </li>
+                <li><img src="images/7.jpeg" class="photo" loading="lazy" /></li>
+                <li>
+                    <video class="videos" id="myvideo" autoplay muted loop>
+                        <source src="images/video4.mp4" type="video/mp4" loading="lazy">
+                    </video>
+                </li>
+                <li><img src="images/8.jpeg" class="photo" loading="lazy" /></li>
+                <li>
+                    <video class="videos" id="myvideo" autoplay muted loop>
+                        <source src="images/video6.mp4" type="video/mp4" loading="lazy">
+                    </video>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="socialmedias-page" id="socialmedias-page">
+        <div class="container">
+            <p>Her şeyden çok sevdiğim biricik sevgilim, seni tandığım günden beri hep iyi ki dedim. İyi ki doğdun, iyi ki
+                tanışmışız. İyi ki benim sevgilim oldun. Buraya pek ne yazacağımı bilmiyorum, sana olan sevgimi
+                anlatamam ne kadar çok sevdiğimi kelimelerle ifade etmek imkansız buralara sığmaz. Her adımımda her
+                nefesimde sen varsın. Seninle geçirdiğim her an beni sana daha da çok bağlıyor. Yeni yaşında seninle
+                birlikte hayal ettiğimiz tüm güzellikler gerçekleşsin. Seninle bir ömür boyu mutluluklarımız sürsün.
+                <u>DOĞUM GÜNÜN KUTLU OLSUN.</u> Birlikte daha çoook güleceğimiz ve eğleneceğimiz senelere. Seni ÇOOOOK seviyorum, iyi ki
+                varsın <u>CANIM SEVGİLİM.</u></p>
+        </div>
+    </section>
+    <section class="copyright-page" id="copyright-page">
+        <h4>Tüm Haklarım Sana Ait ❤️</h4>
+    </section>
+    <div id="fullpage">
+        
+        <div id="fullpage_img_container">
+            <div id="fullpage_img"></div>
+            <video id="theVideo" >
+                <source id="sourceVideo" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <script src="scripts/fullimage.js"></script>
+    <script src="scripts/transition.js"></script>
+    <script src="scripts/light-mode.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/title.js"></script>
+</body>
+
+</html>
