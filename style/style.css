@@ -200,10 +200,6 @@ body.dark {
   height: 100%;
 }
 
-.videos {
-  pointer-events: none;
-}
-
 #socialmedias-page {
   display: flex;
   flex-wrap: wrap;
